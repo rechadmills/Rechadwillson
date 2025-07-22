@@ -1,0 +1,289 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  <title>Dawson Calep Puppies</title>  
+  <meta name="description" content="Buy healthy, vaccinated puppies from Dawson Calep. Available breeds include Poodle, Cavapoo, Yorkie, and more.">  
+  <meta name="keywords" content="puppies for sale, Dawson Calep puppies, poodle, yorkie, maltipoo, buy puppy USA">  
+  <style>  
+    body {  
+      margin: 0;  
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      background-color: #fffaf0;  
+      background-image: url('https://images.unsplash.com/photo-1617814076561-b62f896c9627?auto=format&fit=crop&w=1470&q=80');  
+      background-size: cover;  
+      background-repeat: no-repeat;  
+      background-attachment: fixed;  
+      color: #333;  
+    }  
+    header {  
+      background-color: #ff914d;  
+      color: white;  
+      text-align: center;  
+      padding: 30px 10px;  
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);  
+    }  
+
+    .container {  
+      background: rgba(255,255,255,0.95);  
+      margin: 20px auto;  
+      max-width: 1200px;  
+      padding: 20px;  
+      border-radius: 15px;  
+    }  
+
+    h1 {  
+      font-size: 2.8rem;  
+      font-weight: 900;  
+      letter-spacing: 2px;  
+      text-transform: uppercase;  
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.15);  
+      margin-bottom: 10px;  
+      color: #ff7a1a;  
+      font-family: 'Segoe UI Black', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    }  
+
+    h2 {  
+      font-size: 1.8rem;  
+      font-weight: 700;  
+      color: #ff914d;  
+      border-bottom: 3px solid #ff914d;  
+      padding-bottom: 6px;  
+      margin-top: 40px;  
+      margin-bottom: 15px;  
+      letter-spacing: 1px;  
+    }  
+
+    p {  
+      line-height: 1.5;  
+    }  
+
+    .search-bar {  
+      width: 100%;  
+      padding: 10px;  
+      border-radius: 8px;  
+      margin-bottom: 20px;  
+      border: 1px solid #ccc;  
+      font-size: 16px;  
+    }  
+
+    .puppy-gallery {  
+      display: grid;  
+      grid-template-columns: repeat(auto-fill,minmax(180px,1fr));  
+      gap: 15px;  
+      margin-top: 15px;  
+    }  
+
+    .puppy-card {  
+      background: white;  
+      border-radius: 10px;  
+      overflow: hidden;  
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+      text-align: center;  
+      padding-bottom: 10px;  
+    }  
+
+    .puppy-card img {  
+      width: 100%;  
+      height: 140px;  
+      object-fit: cover;  
+      border-bottom: 1px solid #eee;  
+      display: block;  
+    }  
+
+    .breed-name {  
+      font-weight: bold;  
+      margin: 10px 0 5px 0;  
+      color: #444;  
+    }  
+
+    .floating-btn {  
+      position: fixed;  
+      right: 20px;  
+      padding: 12px 18px;  
+      border-radius: 30px;  
+      font-weight: bold;  
+      background: #ff914d;  
+      color: white;  
+      text-decoration: none;  
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);  
+      z-index: 9999;  
+      display: flex;  
+      align-items: center;  
+      gap: 6px;  
+      font-size: 16px;  
+    }  
+
+    .floating-email { bottom: 20px; }  
+    .floating-review { bottom: 70px; }  
+
+    footer {  
+      text-align: center;  
+      padding: 20px;  
+      color: #666;  
+      font-size: 14px;  
+    }  
+
+    @media (max-width: 480px) {  
+      .puppy-gallery {  
+        grid-template-columns: repeat(auto-fill,minmax(140px,1fr));  
+      }  
+
+      .puppy-card img {  
+        height: 110px;  
+      }  
+    }
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>Dawson Calep Puppies</h1>  
+    <p>Healthy, happy puppies for loving homes 🐾</p>  
+  </header>  
+  
+  <div class="container">  
+    <h2>Available Puppy Breeds</h2>  
+  
+    <!-- 🐶 Search Filter -->  
+    <input type="text" class="search-bar" placeholder="Search for a breed..." oninput="filterBreeds(this.value)" />  
+  
+    <div class="puppy-gallery" id="puppyGallery">  
+      <!-- Example Cards for 50 breeds -->  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg" alt="Poodle" loading="lazy" />  
+        <div class="breed-name">Poodle</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/SyN4HJqNm.jpg" alt="Yorkie" loading="lazy" />  
+        <div class="breed-name">Yorkie</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/Byz6mgqEQ.jpg" alt="Maltipoo" loading="lazy" />  
+        <div class="breed-name">Maltipoo</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/BkMQll94X.jpg" alt="Chihuahua" loading="lazy" />  
+        <div class="breed-name">Chihuahua</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/HJAFgxcNQ.jpg" alt="Pomeranian" loading="lazy" />  
+        <div class="breed-name">Pomeranian</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/rJFJVxc4m.jpg" alt="Bulldog" loading="lazy" />  
+        <div class="breed-name">Bulldog</div>  
+      </div>  
+      <div class="puppy-card">  
+        <img src="https://cdn2.thedogapi.com/images/BkE6Wg5E7.jpg" alt="Cavalier King Charles Spaniel" loading="lazy" />  
+        <div class="breed-name">Cavalier</div>  
+      </div>  
+      <!-- Add more puppies here for full 50 -->
+    </div>  
+  
+    <h2>About Us</h2>  
+    <p style="max-width:700px; margin:auto;">  
+      At Dawson Calep Puppies, we are passionate about providing healthy, well-socialized puppies to loving families across the USA.  
+      With years of experience breeding and caring for dogs, we guarantee every puppy comes vaccinated and ready for a happy home.  
+      Your trust is important to us — that’s why we offer personalized support and nationwide delivery.  
+    </p>  
+  
+    <h2>How to Order</h2>  
+    <p>If you are interested in any puppy, please <strong>email us</strong> at <a href="mailto:rechadwillson@gmail.com">rechadwillson@gmail.com</a> to inquire about pricing, availability, and payment instructions.</p>  
+  
+    <h2>Terms & Conditions</h2>  
+    <p>All puppies come vaccinated and health-checked. Sales are final, and we do not share payment information on the website for your security. Please contact us directly to arrange purchase and payment.</p>  
+  
+    <h2>Puppy Health & Vaccination Facts</h2>  
+    <ul>  
+      <li>All our puppies are fully vaccinated and health-checked by certified veterinarians before going to their new homes.</li>  
+      <li>We follow a strict vaccination schedule to keep your puppy safe and healthy.</li>  
+    </ul>  
+  
+    <h2>Breed-Specific Traits</h2>  
+    <p>Learn about each breed’s unique personality, energy levels, and care tips:</p>  
+    <ul>  
+      <li><strong>Poodle:</strong> Highly intelligent and hypoallergenic, great for families with allergies.</li>  
+      <li><strong>Yorkie:</strong> Small but brave, loves cuddling and playtime.</li>  
+      <li><strong>Maltipoo:</strong> Affectionate and playful, ideal for apartment living.</li>  
+      <li><strong>Chihuahua:</strong> Loyal and lively, requires gentle handling.</li>  
+      <li><strong>Bulldog:</strong> Calm and friendly, great with kids.</li>  
+      <!-- Add more breeds as needed -->  
+    </ul>  
+  
+    <h2>Socialization & Training</h2>  
+    <ul>  
+      <li>Our puppies undergo early socialization with people and other dogs to build confidence and good behavior.</li>  
+      <li>We provide basic training tips with every puppy to help you start on the right paw.</li>  
+    </ul>  
+  
+    <h2>Puppy Nutrition Tips</h2>  
+    <p>Proper nutrition is key to your puppy’s growth and health. We recommend feeding a balanced diet rich in protein, vitamins, and minerals.</p>  
+    <ul>  
+      <li>Use high-quality puppy food formulated for their age and size.</li>  
+      <li>Fresh water should always be available.</li>  
+      <li>Avoid feeding human food or harmful treats.</li>  
+    </ul>  
+  
+    <h2>Puppy Growth Timeline</h2>  
+    <p>Typical puppy development stages:</p>  
+    <ul>  
+      <li><strong>Weeks 1-8:</strong> Newborn stage — focused on nursing and bonding with mom.</li>  
+      <li><strong>Weeks 8-16:</strong> Learning and socialization — ideal time to introduce training.</li>  
+      <li><strong>Months 4-6:</strong> Increased energy and curiosity — continue socializing and play.</li>  
+      <li><strong>Months 6-12:</strong> Adolescence — solidify training and healthy habits.</li>  
+    </ul>  
+  
+    <h2>Frequently Asked Questions (FAQ)</h2>  
+    <ul>  
+      <li><strong>Q:</strong> Do you offer shipping or delivery?<br /><strong>A:</strong> Yes, we provide nationwide delivery options for your convenience.</li>  
+      <li><strong>Q:</strong> How do I make payment?<br /><strong>A:</strong> Contact us via email for secure payment instructions.</li>  
+      <li><strong>Q:</strong> Are the puppies health guaranteed?<br /><strong>A:</strong> All puppies come vaccinated and health-checked. We provide a health guarantee per terms.</li>  
+      <li><strong>Q:</strong> Can I visit the puppies before purchase?<br /><strong>A:</strong> Virtual visits are available upon request due to geographic distance.</li>  
+      <li><strong>Q:</strong> What support do you offer after purchase?<br /><strong>A:</strong> We provide guidance on training and puppy care to ensure a smooth transition.</li>  
+    </ul>  
+  
+    <h2>Puppy Safety Tips</h2>  
+    <ul>  
+      <li>Puppy-proof your home by removing hazards like toxic plants, small objects, and electrical cords.</li>  
+      <li>Supervise your puppy when exploring new areas.</li>  
+      <li>Provide a comfortable and safe space like a crate or bed.</li>  
+      <li>Keep dangerous foods and chemicals out of reach.</li>  
+    </ul>  
+  
+    <h2>Customer Reviews</h2>  
+    <div>  
+      <p><strong>Emily S. - Texas:</strong> "The Cavapoo we received is amazing! Excellent service."</p>  
+      <p><strong>Jordan M. - New York:</strong> "Quick response, great puppy quality. Highly recommend!"</p>  
+      <p><strong>Lana D. - Florida:</strong> "The Poodle was clean and healthy. Great experience!"</p>  
+      <p><strong>Chris P. - California:</strong> "Great customer service. Our Golden Retriever is so cute!"</p>  
+      <p><strong>Maria G. - Ohio:</strong> "Legit breeder! I got my Yorkie in 3 days."</p>  
+      <p><strong>Nate B. - Arizona:</strong> "Professional and smooth transaction."</p>  
+      <p><strong>Leah V. - Washington:</strong> "Healthy German Shepherd. Amazing temperament."</p>  
+      <p><strong>Ivan W. - Michigan:</strong> "Loved the weekly updates. Very legit."</p>  
+      <p><strong>Zoey F. - Nevada:</strong> "Top notch breeder. I’ll buy again."</p>  
+      <p><strong>Tom K. - Georgia:</strong> "They even helped with puppy training tips!"</p>  
+    </div>  
+  </div>  
+  
+  <!-- Floating Buttons -->  
+  <a href="mailto:rechadwillson@gmail.com?subject=Review%20Submission" class="floating-btn floating-review">📝 Send Review</a>  
+  <a href="mailto:rechadwillson@gmail.com" class="floating-btn floating-email">📧 Email Us</a>  
+  
+  <footer>  
+    &copy; 2025 Dawson Calep. All rights reserved.  
+  </footer>  
+  
+  <!-- JavaScript: Filter function -->  
+  <script>  
+    function filterBreeds(value) {  
+      const input = value.toLowerCase();  
+      const cards = document.querySelectorAll(".puppy-card");  
+      cards.forEach(card => {  
+        const name = card.querySelector(".breed-name").innerText.toLowerCase();  
+        card.style.display = name.includes(input) ? "block" : "none";  
+      });  
+    }  
+  </script>  
+</body>  
+</html>
